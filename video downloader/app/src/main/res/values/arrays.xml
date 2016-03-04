@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="offences_count">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth or more</item>
+    </string-array>
+    <string-array name="amounts">
+        <item>$1,000</item>
+        <item>$1,500</item>
+        <item>$2,000</item>
+        <item>Appear before board</item>
+    </string-array>
+    <string-array name="not_in_compliance">
+        <item>NA</item>
+        <item>All Individuals Licensed NRS 644.190.2</item>
+        <item>All Licensed Employees Current NRS 644.430 ref NRS 644.320.1</item>
+        <item>Altering or Copying a License NRS 644.476</item>
+        <item>Apprentice/Supervisor in Compliance NRS 644.2175</item>
+        <item>Ceiling NAC 644.325</item>
+        <item>Credo Blades NAC 644.325</item>
+        <item>Disinfect/Sterilize/Sanitize NAC 644.340</item>
+        <item>Dispensary Sink NAC 644.330</item>
+        <item>Employing Licensed Individuals NRS 644.360.2</item>
+        <item>Establishment License Current NRS 644.430</item>
+        <item>Establishment License Posted NRS 644.360</item>
+        <item>Floors NAC 644.325</item>
+        <item>Furniture NAC 644.325</item>
+        <item>Instruments/Implements NAC 644.340</item>
+        <item>Licensee Working Outside Licensed Establishment NAC 644.380 ref NRS 644.190</item>
+        <item>Operating Establishment w/out License NRS 644.190 red NAC 644.380</item>
+        <item>Pedi-Spa Chairs NAC 644.325</item>
+        <item>Personal License Current NRS 644.430 ref NRS 644.320</item>
+        <item>Personal License Properly Posted NRS 644.290</item>
+        <item>Practicing Within Scope of License NRS 644.270 ref 644.190.2</item>
+        <item>Restrooms NAC 644.320</item>
+        <item>Salon Free of Animals NRS 644.472</item>
+        <item>Shampoo Bowl NAC 644.335</item>
+        <item>Towels/Linens NAC 644.335</item>
+        <item>Ventilation/Exhaust NAC 644.315</item>
+        <item>Walls NAC 644.325</item>
+        <item>Waste Disposal NAC 644.313</item>
+        <item>Work Station NAC 644.325</item>
+    </string-array>
+    <string-array name="violations">
+        <item>NRS 644.430 (j)- Expired License</item>
+        <item>NRS 644.360- Unlicensed Practice</item>
+        <item>NRS 644.430 (h)- Failing to Post License</item>
+        <item>NRS 644.476- Altering/Copying a License</item>
+        <item>NRS 644.270- Practicing Outside of Scope</item>
+        <item>NRS 644.???- Working Outside establishment/no limited license</item>
+        <item>NRS 644.???- No Salon License</item>
+    </string-array>
+    <string-array name="violation_types">
+        <item>Citation</item>
+        <item>Compliance Review</item>
+    </string-array>
+    <string-array name="licensing_or_sanitation">
+        <item>Licensing Related Violation</item>
+        <item>Inspection Prevention Related Violations</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>AK</item>
+        <item>AL</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+    <string-array name="salon_or_individual">
+        <item>Salon</item>
+        <item>Individual</item>
+    </string-array>
+</resources>

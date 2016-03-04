@@ -1,0 +1,84 @@
+<LinearLayout style="@style/Container"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".LoginActivity">
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:id="@+id/header_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingRight="3dp"
+        android:text="Video Downloader"
+        android:textColor="#a8ffffff"
+        android:textSize="56sp"/>
+
+    <EditText
+        android:id="@+id/email_edittext"
+        style="@style/FormElement"
+        android:layout_height="52dp"
+        android:layout_marginBottom="0dp"
+        android:text="test@nsboc.com"
+        android:layout_marginTop="11dp"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="17dp"
+        android:textColorHint="#8c8c8c"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/password_edittext"
+        style="@style/FormElement"
+        android:layout_height="51dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif"
+        android:text="test"
+        android:hint="Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingLeft="17dp"
+        android:textColorHint="#8c8c8c"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/login_button_selector"
+        android:onClick="login"
+        android:paddingRight="3dp"
+        android:text="@string/login_button_label"
+        android:textColor="#dcffffff"
+        android:textSize="20sp"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </android.support.v4.widget.Space>
+
+    <ImageView
+        android:id="@+id/seal_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingBottom="24dp"
+        android:layout_gravity="right"
+        android:paddingRight="8dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_nevada_seal"
+        android:tint="#35ffffff"/>
+
+</LinearLayout>

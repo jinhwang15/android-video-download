@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded"
+    tools:layout_marginLeft="16dp"
+    tools:layout_marginRight="16dp">
+
+
+    <!--Not in Compliance spinner-->
+    <TextView
+        style="@style/SpinnerHeaderText"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Not in Compliance" />
+
+    <RelativeLayout
+        style="@style/SpinnerContainer"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <Spinner
+            android:id="@+id/not_in_compliance_spinner"
+            style="@style/Spinner"
+            android:entries="@array/not_in_compliance"
+            android:spinnerMode="dialog" />
+
+        <ImageView style="@style/SpinnerArrowIcon" />
+
+    </RelativeLayout>
+
+
+    <!--Violation Type spinner-->
+    <TextView
+        style="@style/SpinnerHeaderText"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Violation Type" />
+
+    <RelativeLayout
+        style="@style/SpinnerContainer"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <Spinner
+            android:id="@+id/violation_type_spinner"
+            style="@style/Spinner"
+            android:entries="@array/violation_types" />
+
+        <ImageView style="@style/SpinnerArrowIcon" />
+
+    </RelativeLayout>
+
+
+    <!--Photo of Salon Violation image picker-->
+    <TextView
+        android:id="@+id/violation_image_picker"
+        style="@style/ImagePicker"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Photo of Salon Violation 1" />
+
+
+    <!--Comment edittext-->
+    <android.support.design.widget.TextInputLayout
+        style="@style/EditTextContainer"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <EditText
+            android:id="@+id/comment_edittext"
+            style="@style/FormElement"
+            android:hint="Comment Salon Violation 1"
+            android:inputType="textCapSentences" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!--Citation issued toggle-->
+    <LinearLayout
+        style="@style/toggle_container"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/citation_issued_textview"
+            style="@style/toggle_label"
+            android:text="Citation Issued to Individual" />
+
+        <ToggleButton
+            android:id="@+id/citation_issued_toggle"
+            style="@style/ToggleButton"
+            android:checked="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/type_citation_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/toggle_container"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                style="@style/toggle_label"
+                android:text="Citation Issued to Salon" />
+
+            <ToggleButton
+                android:id="@+id/type_citation_issued_toggle"
+                style="@style/ToggleButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:text="Offence to Salon" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/offence_to_individual"
+                    style="@style/Spinner"
+                    android:entries="@array/offences_count" />
+
+                <ImageView
+                    style="@style/SpinnerArrowIcon"
+                    android:src="@drawable/ic_spinner_arrow" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--Another compliance toggle-->
+    <LinearLayout
+        style="@style/toggle_container"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/is_another_label"
+            style="@style/toggle_label"
+            android:text="Is there another not in compliance 2?" />
+
+        <ToggleButton
+            android:id="@+id/compliance_toggle"
+            style="@style/ToggleButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

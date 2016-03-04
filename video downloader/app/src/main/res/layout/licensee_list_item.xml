@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="72dp"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+              android:background="#18000000"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/licenseeId"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:onClick="showLicensee"
+        android:text="C-98765"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Jane Doe"
+        android:id="@+id/name"/>
+
+    <ToggleButton
+        android:id="@+id/inCharge"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:checked="true"
+        android:textOn="Yes"
+        android:textOff="No"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:onClick="expiredLicensee"
+        android:gravity="center"
+        android:text="03/01/14"
+        android:textSize="18sp"
+        android:textColor="#ffcc0000"
+        android:id="@+id/expires"/>
+
+    <ImageButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:src="@drawable/ic_delete"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:onClick="removeLicensee"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:gravity="center_horizontal"
+        android:text="Remove"
+        android:id="@+id/removeButton"/>
+
+</LinearLayout>

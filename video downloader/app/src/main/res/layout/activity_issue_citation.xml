@@ -1,0 +1,168 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/FormContainer"
+        android:paddingBottom="32dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            style="@style/toggle_container">
+
+            <TextView
+                style="@style/toggle_label"
+                android:text="Are you issuing this citation to a licensee?"/>
+
+            <ToggleButton
+                android:id="@+id/citation_to"
+                style="@style/ToggleButton"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:id="@+id/licensee_id"
+                style="@style/FormElement"
+                android:hint="Licensee ID"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/date"
+                style="@style/FormElement"
+                android:hint="Date"
+                android:inputType="date"
+                android:text="01/01/2016"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            style="@style/SpinnerHeaderText"
+            android:layout_marginTop="32dp"
+            android:text="Violation Type"/>
+
+        <RelativeLayout
+            style="@style/SpinnerContainer">
+
+            <Spinner
+                android:id="@+id/violation_type_spinner"
+                style="@style/Spinner"
+                android:entries="@array/violation_types"/>
+
+            <ImageView style="@style/SpinnerArrowIcon"/>
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/SpinnerHeaderText"
+            android:layout_marginTop="16dp"
+            android:text="Violation Description"/>
+
+        <RelativeLayout
+            style="@style/SpinnerContainer">
+
+            <Spinner
+                android:id="@+id/not_in_compliance_spinner"
+                style="@style/Spinner"
+                android:entries="@array/not_in_compliance"
+                android:spinnerMode="dialog"/>
+
+            <ImageView style="@style/SpinnerArrowIcon"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="64dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="Comment"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/violation_image_picker"
+            style="@style/ImagePicker"
+            android:onClick="addPhoto"
+            android:layout_marginTop="8dp"
+            android:text="Add Photo"/>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="48dp">
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/FormElement"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:text="hairsalon@gmail.com"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="-16dp">
+
+            <EditText
+                android:id="@+id/new_email"
+                style="@style/FormElement"
+                android:hint="New Email"
+                android:inputType="textEmailAddress"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/salon_signature"
+            style="@style/ImagePicker"
+            android:layout_marginTop="24dp"
+            android:text="Salon/Individual Signature"/>
+
+        <TextView
+            android:id="@+id/inspector_signature"
+            style="@style/ImagePicker"
+            android:layout_marginTop="8dp"
+            android:text="Inspector Signature"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="24dp">
+
+            <Button
+                android:id="@+id/compliance_button"
+                android:layout_width="140dp"
+                android:layout_height="64dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#ad00b04f"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.1"
+                android:onClick="submit"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

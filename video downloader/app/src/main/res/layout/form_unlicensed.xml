@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_height"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:theme="@style/NsbocTheme.AppBar">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/AppBarContainer">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Civil Citation"
+                android:inputType="date"
+                android:paddingBottom="16dp"
+                android:paddingTop="0dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@android:color/white"
+                tools:text="01/01/2015"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </FrameLayout>
+
+    <LinearLayout style="@style/FormContainer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/FormElement"
+                android:hint="Name"
+                android:inputType="textPersonName|textCapWords|textNoSuggestions"
+                android:paddingLeft="57dp"/>
+
+            <ImageView
+                style="@style/EditTextIcon"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignTop="@+id/name"
+                android:src="@drawable/ic_name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/salon_name"
+                style="@style/FormElement"
+                android:hint="Salon Name (if applicable)"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:paddingLeft="57dp"/>
+
+            <ImageView
+                style="@style/EditTextIcon"
+                android:layout_alignBottom="@+id/salon_name"
+                android:layout_alignTop="@+id/salon_name"
+                android:src="@drawable/ic_store"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/phone"
+                style="@style/FormElement"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:paddingLeft="57dp"/>
+
+            <ImageView
+                style="@style/EditTextIcon"
+                android:layout_alignBottom="@+id/phone"
+                android:layout_alignTop="@+id/phone"
+                android:src="@drawable/ic_phone"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <EditText
+                android:id="@+id/street"
+                style="@style/FormElement"
+                android:hint="Street"
+                android:inputType="textPostalAddress|textCapWords|textNoSuggestions"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer">
+
+            <EditText
+                android:id="@+id/city"
+                style="@style/FormElement"
+                android:hint="City"
+                android:inputType="textPostalAddress|textCapWords|textNoSuggestions"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:layout_marginLeft="13dp"
+                android:text="State"
+                android:textColor="#838383"
+                android:textSize="12sp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/state"
+                    style="@style/Spinner"
+                    android:entries="@array/states"
+                    android:spinnerMode="dialog"/>
+
+                <ImageView
+                    style="@style/SpinnerArrowIcon"
+                    android:src="@drawable/ic_spinner_arrow"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginBottom="17dp">
+
+            <EditText
+                android:id="@+id/zip"
+                style="@style/FormElement"
+                android:hint="ZIP"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/selector_identification_form_1"
+            style="@style/ImagePicker"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="36dp"
+            android:text="Identification photo"/>
+
+        <android.support.design.widget.TextInputLayout style="@style/EditTextContainer">
+
+            <EditText
+                android:id="@+id/citation_number"
+                style="@style/FormElement"
+                android:hint="Citation Number"
+                android:inputType="number"
+                android:nextFocusDown="@+id/unlicensed"
+                tools:text="Citation number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout style="@style/toggle_container">
+
+            <TextView
+                style="@style/toggle_label"
+                android:text="Issued for unlicensed activity"/>
+
+            <ToggleButton
+                android:id="@+id/unlicensed"
+                style="@style/ToggleButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:text="Offense to Individual"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/offence_to_individual"
+                    style="@style/Spinner"
+                    android:entries="@array/offences_count"/>
+
+                <ImageView
+                    style="@style/SpinnerArrowIcon"
+                    android:src="@drawable/ic_spinner_arrow"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:text="Fine Amount to Individual"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/requested_amount"
+                    style="@style/Spinner"
+                    android:entries="@array/amounts"/>
+
+                <ImageView
+                    style="@style/SpinnerArrowIcon"
+                    android:src="@drawable/ic_spinner_arrow"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/citation_photo"
+            style="@style/ImagePicker"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="24dp"
+            android:text="Photo of Citation"/>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer">
+
+            <EditText
+                android:id="@+id/incident_description"
+                style="@style/FormElement"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="Description of Incident"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="3"
+                android:maxLines="3"
+                android:paddingBottom="16dp"
+                android:paddingTop="12dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/notice_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="1dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/civil_citation_header"
+            android:textColor="#17405e"
+            android:textSize="20sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/civil_citation"
+                style="@style/FormElement"
+                android:hint="Civil Citation"
+                android:inputType="textCapSentences"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:paddingBottom="4dp"
+                android:text="Email to Individual"/>
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="8dp"
+                android:hint="Email report to..."
+                android:inputType="textCapSentences|textNoSuggestions"/>
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="-6dp"
+                android:hint="Optional message"
+                android:lines="3"
+                android:maxLines="6"
+                android:paddingTop="12dp"
+                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:gravity="top"
+                android:inputType="textCapSentences|textNoSuggestions|textMultiLine"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:paddingBottom="4dp"
+                android:text="Inspector Email"/>
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="8dp"
+                android:hint="Email report to..."
+                android:inputType="textCapSentences|textNoSuggestions"/>
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="-6dp"
+                android:hint="Optional message"
+                android:lines="3"
+                android:maxLines="6"
+                android:paddingTop="12dp"
+                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:gravity="top"
+                android:inputType="textCapSentences|textNoSuggestions|textMultiLine"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:paddingBottom="4dp"
+                android:text="Email CFO"/>
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="8dp"
+                android:hint="Email report recipient"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:text="ahelms@nvcosmobd.nv.gov"/>
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="-6dp"
+                android:hint="Optional message"
+                android:lines="3"
+                android:maxLines="6"
+                android:paddingTop="12dp"
+                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:gravity="top"
+                android:inputType="textCapSentences|textNoSuggestions|textMultiLine"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:paddingBottom="4dp"
+                android:text="Email Chief Inspector"/>
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="8dp"
+                android:hint="Email report recipient"
+                android:inputType="textCapSentences|textNoSuggestions"
+                android:text="acurtis@nvcosmobd.nv.gov "/>
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="-6dp"
+                android:hint="Optional message"
+                android:lines="3"
+                android:maxLines="6"
+                android:paddingTop="12dp"
+                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:gravity="top"
+                android:inputType="textCapSentences|textNoSuggestions|textMultiLine"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/selector_individual_signature_form_1"
+            style="@style/ImagePicker"
+            android:text="Individual Signature"/>
+
+        <TextView
+            android:id="@+id/selector_inspector_form_1"
+            style="@style/ImagePicker"
+            android:layout_marginTop="8dp"
+            android:text="Inspector Signature"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="124dp"
+            android:paddingTop="40dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="Inspected by"
+                android:inputType="textPersonName|textCapWords"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

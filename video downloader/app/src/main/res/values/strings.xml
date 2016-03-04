@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">VDOWNLOADER</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_form_list">Video Downloader</string>
+    <string name="action_save">Save</string>
+    <string name="title_activity_compose">Compose</string>
+    <string name="info_button_label">Info</string>
+    <string name="select_button_label">Select</string>
+    <string name="form_1_subhead">Practicing without a license</string>
+    <string name="form_1_icon_description">Unlicensed individual image</string>
+    <string name="form_2_subhead">Establishment inspection</string>
+    <string name="form_2_icon_description">Salon license image</string>
+    <string name="civil_citation_header"><u>Violation Appeal</u></string>
+    <string name="civil_citation_notice"><u>Violation Appeal\n\nIf you wish to appeal this violation of NRS 644.190 you must request a hearing by written notice of appeal to the Board within 30 days after the date on which the citation has been issued. CONSENT DECREE: I have given you a copy of the citation that I issued today for an alleged violation of Chapter 644 of the Nevada Revised Statutes. You must choose ONE of the following 3 options: OPTION 1- Sign the CONSENT AGREEMENT that you have been given today and send it with a check in the amount of your fine to the office nearest you: 1785 E. Sahara Avenue, Suite 255, Las Vegas, NV 89104 or 4600 Kietzke Lane, Building 0, Suite 262, Reno, NV 89502. Once we receive your payment and signature the process is finished. OPTION 2- You may petition to appear before the Board to ask for a reduction in the fine amount based on good reasons why the amount is not appropriate in this case. You must print clearly and completely fill out the PETITION TO APPEAR form stating the specific reasons why your circumstances warrant a reduction in the fine amount. The Board will rule on whether to uphold or reduce your fine amount. After you appear before the Board you will be required to sign the CONSENT AGREEMENT and pay the amount ruled on at the Board meeting. OPTION 3- If you dispute the fact that you committed the violations I am alleging you committed today you can file an APPEAL OF CITATION to appear before the Nevada State Board of Cosmetology. At the meeting before the Board you will be questioned by an attorney from the Nevada Attorney General\'s Office about the facts of the case. Under NRS 644.430 any violation of Chapter 644 are grounds for disciplinary action by the Board. If you are found guilty of a violation by the Board they may: 1. Refuse to issue or renew your license. 2. Impose a fine up to $2,000 for each violation. 3. Take any combination of these actions. You may request an APPEAL OF CITATION from the Board office.</u></string>
+
+    <string name="parse_app_id">R1nyeSUwE5EXFkC2xz2FaX2fSLBHb07SDmbdEWOs</string>
+    <string name="parse_client_key">PwuQhZnt8eTJq1lhizPVnWCoBE1Aw4zADHBgP6Xq</string>
+    <string name="login_button_label">L\u200ao\u200ag\u200a i\u200an</string>
+    <string name="app_name_label">N\u2009S\u2009B\u2009O\u2009C</string>
+    <string name="register_button_label">R\u200ae\u200ag\u200ai\u200as\u200at\u200ae\u200ar</string>
+    <string name="title_activity_find_salon">Find Movie</string>
+    <string name="title_activity_review_salon">Find Game</string>
+    <string name="title_activity_check_detail">Sanitation Compliance</string>
+
+    <string name="title_activity_salon_detail">Movie details</string>
+    <string name="title_activity_license_detail">License</string>
+    <string name="owner_placeholder">Owner: JC Penny Inc.</string>
+    <string name="licansees_header"><b>Licensees at salon:</b></string>
+    <string name="title_activity_licensee_detail">Licensee</string>
+    <string name="title_activity_store_contacts_edit">Edit Contacts</string>
+    <string name="title_activity_sanitation_compliance_button">Sanitation Compliance</string>
+    <string name="title_activity_compliance_choose">Compliance Category</string>
+    <string name="title_activity_issue_citation">Issue Citation</string>
+    <string name="title_activity_invest_salon">Find Sports</string>
+
+    <string name="title_activity_inspection_new">Video Downloader</string>
+    <string name="title_activity_agency_review">Agency Review</string>
+    <string name="title_activity_signature">Signature</string>
+    <string name="title_activity_compliance_summary">Summary</string>
+</resources>

@@ -1,0 +1,125 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        style="@style/FormContainer"
+        android:paddingBottom="32dp"
+        android:paddingTop="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="32dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="What is the issue or concern?"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="Who and what could be affected?"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="What action are you requesting?"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="Who should be notified?"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="Additional Comments"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/violation_image_picker"
+            style="@style/ImagePicker"
+            android:layout_marginTop="8dp"
+            android:onClick="addPhoto"
+            android:text="Add Photo"/>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="56dp">
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/FormElement"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:text="hairsalon@gmail.com"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="-16dp">
+
+            <EditText
+                android:id="@+id/new_email"
+                style="@style/FormElement"
+                android:hint="New Email"
+                android:inputType="textEmailAddress"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="24dp">
+
+            <Button
+                android:id="@+id/compliance_button"
+                android:layout_width="140dp"
+                android:layout_height="64dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#ad00b04f"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.1"
+                android:onClick="submit"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

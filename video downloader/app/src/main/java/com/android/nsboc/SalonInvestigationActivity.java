@@ -1,0 +1,115 @@
+package com.android.nsboc;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
+
+/**
+ * Created by Administrator on 12/14/2015.
+ */
+
+public class SalonInvestigationActivity extends AppCompatActivity {
+
+    private static final String SHOW_ALL = "";
+//    private SalonInvestAdapter mSalonAdapter;
+    private int mMatchesCount;
+    private String mMatchId;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_invest_salon);
+
+//        searchSalons(SHOW_ALL);
+//
+//        EditText searchField = (EditText) findViewById(R.id.searchField);
+//        searchField.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int before, int count) {
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                String query = s.toString().trim();
+//                searchSalons(query);
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//            }
+//        });
+//        searchField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+//            @Override
+//            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+//                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+//                    if (mMatchesCount == 1) {
+//                        openDetailView(mMatchId);
+//                    } else {
+//                        hideKeyboard();
+//                    }
+//                    return true;
+//                }
+//                return false;
+//            }
+//        });
+        Toast.makeText(SalonInvestigationActivity.this, "Coming soon", Toast.LENGTH_SHORT).show();
+//        mSalonAdapter = new SalonInvestAdapter(this);
+//
+//        ListView listView = (ListView) findViewById(android.R.id.list);
+//        listView.setAdapter(mSalonAdapter);
+//        listView.requestFocus();
+    }
+
+//    private void openDetailView(String salonId) {
+//        Intent intent = new Intent(this, SalonDetailActivity.class);
+//        intent.putExtra("salon_id", salonId);
+//        startActivity(intent);
+//    }
+//
+//    private void hideKeyboard() {
+//        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+//        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+//    }
+//
+//    private void searchSalons(String query) {
+//        findViewById(R.id.progressBar).setVisibility(View.VISIBLE);
+//
+//        ParseQuery<ParseObject> queryId = ParseQuery.getQuery("Salon");
+//        queryId.whereContains("license", query);
+//
+//        ParseQuery<ParseObject> queryName = ParseQuery.getQuery("Salon");
+//        queryName.whereContains("name", query);
+//
+//        List<ParseQuery<ParseObject>> queries = new ArrayList<>();
+//        queries.add(queryId);
+//        queries.add(queryName);
+//
+//        ParseQuery<ParseObject> mainQuery = ParseQuery.or(queries);
+//        mainQuery.fromLocalDatastore();
+//        mainQuery.findInBackground(new FindCallback<ParseObject>() {
+//            @Override
+//            public void done(List<ParseObject> salons, ParseException e) {
+//                if (e == null) {
+//                    mMatchesCount = salons.size();
+//                    if (mMatchesCount == 1) {
+//                        mMatchId = salons.get(0).getObjectId();
+//                    }
+//                    populateList(salons);
+//                } else {
+//                    Toast.makeText(SalonInvestigationActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
+//    }
+
+//    private void populateList(List<ParseObject> salons) {
+//        mSalonAdapter.clear();
+//        mSalonAdapter.addAll(salons);
+//
+//        findViewById(R.id.progressBar).setVisibility(View.GONE);
+//    }
+//
+//    public void showNearest(View view) {
+//        Toast.makeText(this, "Coming soon", Toast.LENGTH_SHORT).show();
+//    }
+}

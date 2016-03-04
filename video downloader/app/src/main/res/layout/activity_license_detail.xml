@@ -1,0 +1,115 @@
+<LinearLayout
+    style="@style/Container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".LicenseDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="62dp"
+                android:paddingRight="16dp"
+                android:textColor="#d9000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:text="Square Color Salon &amp; Spa"/>
+
+            <Button
+                android:id="@+id/licenseButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="4dp"
+                android:background="?selectableItemBackground"
+                android:fontFamily="sans-serif-normal"
+                android:gravity="left|center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:onClick="viewLicense"
+                android:paddingLeft="62dp"
+                android:paddingRight="16dp"
+                android:text="License S-12345 (current)\nExpires on 9/30/2015"
+                android:textAllCaps="false"
+                android:textColor="#d9000000"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#18000000"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingLeft="64dp"
+                android:paddingRight="64dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inspection"
+                    android:textColor="#d9000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Database access needed)"
+                    android:textColor="#4d000000"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Citation"
+                    android:textColor="#d9000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Database access needed)"
+                    android:textColor="#4d000000"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Attachment"
+                    android:textColor="#d9000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Database access needed)"
+                    android:textColor="#4d000000"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

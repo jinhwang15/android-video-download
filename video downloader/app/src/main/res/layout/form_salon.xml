@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_height"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:theme="@style/NsbocTheme.AppBar">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/AppBarContainer">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Inspection date"
+                android:inputType="date"
+                android:paddingBottom="16dp"
+                android:paddingTop="0dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@android:color/white"
+                tools:text="01/01/2015" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </FrameLayout>
+
+    <LinearLayout style="@style/FormContainer">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="22dp">
+
+            <EditText
+                android:id="@+id/establishment_id"
+                style="@style/FormElement"
+                android:hint="Salon Establishment #"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/establishment_name"
+                style="@style/FormElement"
+                android:hint="Salon Establishment Name"
+                android:inputType="textCapSentences|textNoSuggestions" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/charge_name"
+                style="@style/FormElement"
+                android:hint="Licensee in Charge Name"
+                android:inputType="textCapSentences|textNoSuggestions" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/charge_id"
+                style="@style/FormElement"
+                android:hint="Licensee in Charge License #"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            style="@style/toggle_container"
+            android:layout_marginTop="48dp">
+
+            <TextView
+                style="@style/toggle_label"
+                android:text="Salon Establishment in Compliance" />
+
+            <ToggleButton
+                android:id="@+id/compliance_toggle"
+                style="@style/ToggleButton"
+                android:checked="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/compliance_container"
+            style="@style/expandable_container">
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="General Comments" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="Owner/Licensee in Charge Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SpinnerHeaderText"
+                android:paddingBottom="4dp"
+                android:text="Owner/Licensee in Charge Email" />
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="8dp"
+                android:hint="Email report to..."
+                android:inputType="textCapSentences|textNoSuggestions" />
+
+            <EditText
+                style="@style/FormElement"
+                android:layout_marginTop="-6dp"
+                android:hint="Optional message"
+                android:inputType="textCapSentences|textNoSuggestions" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/toggle_container"
+            android:layout_marginTop="72dp">
+
+            <TextView
+                style="@style/toggle_label"
+                android:text="Email to Individual?" />
+
+            <ToggleButton
+                android:id="@+id/emailTo_toggle"
+                style="@style/ToggleButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailTo_layout"
+            style="@style/expandable_container"
+            android:paddingBottom="32dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Send email"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    style="@style/FormElement"
+                    android:layout_marginTop="8dp"
+                    android:hint="Recipient"
+                    android:inputType="textCapSentences|textNoSuggestions" />
+
+                <EditText
+                    style="@style/FormElement"
+                    android:layout_marginTop="-6dp"
+                    android:hint="Optional message"
+                    android:inputType="textCapSentences|textNoSuggestions" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/owner_image_form_2"
+            style="@style/ImagePicker"
+            android:layout_marginTop="20dp"
+            android:text="Owner/Licensee in Charge Signature" />
+
+        <TextView
+            android:id="@+id/inspector_image_form_2"
+            style="@style/ImagePicker"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_camera"
+            android:text="Inspector Signature" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/EditTextContainer"
+            android:paddingBottom="124dp"
+            android:paddingTop="32dp">
+
+            <EditText
+                style="@style/FormElement"
+                android:hint="Inspection Completed by"
+                android:inputType="textPersonName|textCapWords" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

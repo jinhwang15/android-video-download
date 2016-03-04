@@ -1,0 +1,69 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="-4dp"
+        android:paddingTop="0dp">
+
+        <EditText
+            android:id="@+id/searchField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:hint="Complaint Number"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textCapWords"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="9dp"
+            android:paddingTop="12dp"
+            android:textSize="22sp"/>
+
+
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--style="@style/Container"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:elevation="1dp"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:context=".FindSalonActivity">-->
+
+        <!--<ListView-->
+            <!--android:id="@android:id/list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:clipToPadding="false"-->
+            <!--android:divider="@android:color/transparent"-->
+            <!--android:dividerHeight="24.0sp"-->
+            <!--android:paddingBottom="32dp"-->
+            <!--android:paddingTop="24dp"-->
+            <!--tools:listitem="@layout/salon_list_item"/>-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressBar"-->
+            <!--style="?android:attr/progressBarStyleLarge"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:visibility="gone"/>-->
+
+    <!--</RelativeLayout>-->
+
+</LinearLayout>
